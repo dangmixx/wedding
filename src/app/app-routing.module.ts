@@ -5,15 +5,11 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'wedding',
-    },
-    {
-        path: 'wedding',
         loadComponent: () =>
-            import('./my-wedding/my-wedding.component').then(
-                (cmp) => cmp.MyWeddingComponent
-            ),
-    },
+        import('./my-wedding/my-wedding.component').then(
+            (cmp) => cmp.MyWeddingComponent
+        ),
+    }
 ];
 
 @NgModule({
