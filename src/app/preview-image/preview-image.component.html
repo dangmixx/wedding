@@ -1,0 +1,67 @@
+<div class="wrapper-dialog">
+  <div class="wrapper-carousel wrapper-carousel-dialog">
+    <ng-container>
+      <owl-carousel-o [options]="customOptions"
+                      (change)="changeData($event)"
+                      (changed)="changedData($event)">
+        <ng-container *ngFor="let slide of dataForCarousel; let i = index">
+          <ng-template carouselSlide
+                       [id]="i+''">
+            <div class="slide"
+                 [ngClass]="'side-length-' + dataForCarousel.length">
+              <ng-container [ngSwitch]="slide.type">
+                <!-- Play Video -->
+                <ng-container *ngSwitchCase="mediaType.video">
+                  <div class="img-container">
+                    <video width="auto"
+                           height="auto"
+                           id="element-{{i}}"
+                           autoplay
+                           #elementPreview
+                           muted
+                           controls
+                           class="img-card-video">
+                      <source type="video/mp4"
+                              [src]="slide?.url">
+                    </video>
+                    <!-- <span class="count">{{i+1}}/{{dataForCarousel.length}}</span> -->
+                  </div>
+                </ng-container>
+                <!-- Play Image -->
+                <ng-container *ngSwitchCase="mediaType.photo">
+                  <figure class="img-container">
+                    <img [src]="slide.url"
+                         id="element-{{i}}"
+                         #elementPreview
+                         [alt]="slide.url">
+                    <!-- <span class="count">{{i+1}}/{{dataForCarousel.length}}</span> -->
+                    <button class="btn-icon secondary loading-src">
+                      <i class="ico ico-spinner spinner "></i>
+                    </button>
+                  </figure>
+                </ng-container>
+                <!-- Play Default = Image -->
+                <ng-container *ngSwitchDefault>
+                  <figure class="img-container">
+                    <img [src]="slide.url"
+                         id="element-{{i}}"
+                         #elementPreview
+                         [alt]="slide.url">
+                    <!-- <span class="count">{{i+1}}/{{dataForCarousel.length}}</span> -->
+                    <button class="btn-icon secondary loading-src">
+                      <i class="ico ico-spinner spinner "></i>
+                    </button>
+                  </figure>
+                </ng-container>
+              </ng-container>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </ng-container>
+  </div>
+  <div class="outline-dialog">
+    <i class="ico ico-close"
+       (click)="closeDialog()"></i>
+  </div>
+</div>

@@ -1,2 +1,29 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<router-outlet></router-outlet>
+<div class="header-layout">
+  <h2 class="title-page">Title Page</h2>
+  <h1 class="name-and-name">
+    <span class="name1">
+      Name
+    </span>
+    <span class="and">
+      &
+    </span>
+    <span class="name2">
+      Name
+    </span>
+  </h1>
+  <h3>Date/Month/Year</h3>
+  <h4>Location,Location,Location</h4>
+  <div class="image">
+    <!-- <img src="assets/Title.png"> -->
+  </div>
+
+  <div class="confetti">
+    <ng-container *ngFor="let dummy of ' '.repeat(20).split('')">
+      <div class="confetti-piece"></div>
+    </ng-container>
+  </div>
+</div>
+<app-location></app-location>
+<section class="galary">
+  <app-slider></app-slider>
+</section>

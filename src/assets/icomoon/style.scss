@@ -1,0 +1,120 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?u6q0do');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?u6q0do#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?u6q0do') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?u6q0do') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?u6q0do##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-calendar-2 {
+  &:before {
+    content: $ico-calendar-2; 
+  }
+}
+.ico-accommodation {
+  &:before {
+    content: $ico-accommodation; 
+  }
+}
+.ico-arrow-left {
+  &:before {
+    content: $ico-arrow-left; 
+  }
+}
+.ico-arrow-right {
+  &:before {
+    content: $ico-arrow-right; 
+  }
+}
+.ico-bubble-spl {
+  &:before {
+    content: $ico-bubble-spl; 
+  }
+}
+.ico-calendar {
+  &:before {
+    content: $ico-calendar; 
+  }
+}
+.ico-camera {
+  &:before {
+    content: $ico-camera; 
+  }
+}
+.ico-check {
+  &:before {
+    content: $ico-check; 
+  }
+}
+.ico-check-badge {
+  &:before {
+    content: $ico-check-badge; 
+  }
+}
+.ico-check-circle {
+  &:before {
+    content: $ico-check-circle; 
+  }
+}
+.ico-clock {
+  &:before {
+    content: $ico-clock; 
+  }
+}
+.ico-close {
+  &:before {
+    content: $ico-close; 
+  }
+}
+.ico-map-pin {
+  &:before {
+    content: $ico-map-pin; 
+  }
+}
+.ico-message-board-2 {
+  &:before {
+    content: $ico-message-board-2; 
+  }
+}
+.ico-message-out {
+  &:before {
+    content: $ico-message-out; 
+  }
+}
+.ico-profile-img-favor {
+  &:before {
+    content: $ico-profile-img-favor; 
+  }
+}
+.ico-notification {
+  &:before {
+    content: $ico-notification; 
+  }
+}
+.ico-clear {
+  &:before {
+    content: $ico-clear; 
+  }
+}
+

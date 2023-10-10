@@ -1,3 +1,42 @@
-body{
-  margin: 0 !important;
+@use '../mixin.scss' as mixin;
+
+.header-layout {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffe1e150;
+  color: #000;
+  overflow: hidden;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+  }
+
+  .image {
+    img {
+      max-width: 100%;
+      width: 100%;
+    }    text-align: center;
+  }
+
+  .title-page {
+    font-size: 32px;
+  }
+
+  .name-and-name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.galary {
+  max-width: 1400px;
+  margin: auto;
 }

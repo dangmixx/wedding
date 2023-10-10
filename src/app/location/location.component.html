@@ -1,0 +1,30 @@
+<div class="count-down-timer">
+  <p>Countdown to {{ targetTime | date : 'dd MMM YYYY - HH:mm' }}</p>
+  <div class="wrapper">
+    <div class="description">
+      <p>Days</p>
+      <p>Hours</p>
+      <p>Minutes</p>
+      <p>Seconds</p>
+    </div>
+    <div class="times">
+      <p>{{days | number: '2.0-3' }}</p>
+      <p>{{hours | number :'2.0-3'}}</p>
+      <p>{{minutes | number : '2.0-3'}}</p>
+      <p>{{seconds| number :'2.0-3'}}</p>
+    </div>
+  </div>
+</div>
+
+<section class="location-container">
+  <div class="location-info">
+    <div class="loaction-name">
+      <p>Name: XXX XXX XXX</p>
+      <p>Address: XXX,YYYY,ZZZZ</p>
+      <p>Phone: XXX ZZZ YYY</p>
+    </div>
+    <img src="assets/LocationMap.png"
+         width="200px"
+         height="200px">
+  </div>
+</section>

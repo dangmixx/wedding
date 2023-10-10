@@ -1,0 +1,8 @@
+<div class="list-img-container">
+  <ng-container *ngFor="let img of listImage; let i=index">
+    <div class="wrapper-img"
+         (click)="previewImg(i)">
+      <img [src]="img.itemImageSrc">
+    </div>
+  </ng-container>
+</div>
