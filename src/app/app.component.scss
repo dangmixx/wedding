@@ -35,6 +35,15 @@
     text-align: center;
   }
 
+  .info-page{
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .title-page {
     font-size: 32px;
   }
@@ -59,7 +68,7 @@
     }
 
     @include mixin.responsive(MD){
-      width: 50vw;
+      width: 500px;
     }
   }
 }

@@ -1,20 +1,23 @@
 <section class="header-layout"
          #yesIdo>
-  <h2 class="title-page">{{configApp.titlePage}}</h2>
-  <h1 class="name-and-name">
-    <span class="name1">
-      {{configApp.nameOfCR}}
-    </span>
-    <span class="and">
-      &
-    </span>
-    <span class="name2">
-      {{configApp.nameOfCD}}
-    </span>
-  </h1>
-  <h3>{{configApp.targeDate | date: 'dd MMM yyyy'}}</h3>
-  <h4>{{configApp.location}}</h4>
-  <h4>{{configApp.address}}</h4>
+  <div class="info-page">
+    <h2 class="title-page">{{configApp.titlePage}}</h2>
+    <h1 class="name-and-name">
+      <span class="name1">
+        {{configApp.nameOfCR}}
+      </span>
+      <span class="and">
+        &
+      </span>
+      <span class="name2">
+        {{configApp.nameOfCD}}
+      </span>
+    </h1>
+    <h3>{{configApp.targeDate | date: 'dd MMM yyyy'}}</h3>
+    <h4>{{configApp.location}}</h4>
+    <h4>{{configApp.address}}</h4>
+  </div>
+
   <div class="image">
     <img [src]="configApp.bannerImage">
   </div>
