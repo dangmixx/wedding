@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { SliderComponent } from './slider/slider.component';
 import { LocationComponent } from './location/location.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
     declarations: [AppComponent],
     imports: [
@@ -17,6 +17,7 @@ import { LocationComponent } from './location/location.component';
         FormsModule,
         SliderComponent,
         LocationComponent,
+        HttpClientModule,
     ],
     bootstrap: [AppComponent],
 })

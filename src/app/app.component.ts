@@ -1,13 +1,17 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { PhotoService } from './photo.service';
+import { Component, ElementRef, OnInit, inject } from '@angular/core';
+import { AppConfigService } from './app.service';
+import { AppConfig } from './app.model';
+import { DOCUMENT } from '@angular/common';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    providers: [PhotoService],
+    providers: [AppConfigService],
 })
-export class AppComponent {
-    photoService = inject(PhotoService);
+export class AppComponent implements OnInit {
+    #configService = inject(AppConfigService);
+    #document = inject(DOCUMENT);
+    public configApp: AppConfig = this.#configService.getConfig();
     displayCustom = false;
     activeIndex: number = 0;
     displayBasic = false;
@@ -32,7 +36,26 @@ export class AppComponent {
     ];
 
     ngOnInit(): void {
-        this.photoService.getImages().then((res) => (this.images = [...res]));
+        // this.#sheetService.getInvitation().subscribe(console.log);
+    }
+
+    public scrollTo(element: HTMLElement) {
+        const topScroll =
+            element.offsetTop > 100
+                ? element.offsetTop - 20
+                : element.offsetTop;
+        window.scrollTo({
+            top: topScroll,
+            behavior: 'smooth',
+        });
+    }
+
+    public testSubmitData() {
+        this.#configService.postData().subscribe(console.log);
+    }
+
+    public testSubmitForm() {
+        this.#configService.postGoogleSheet().subscribe(console.log);
     }
 
     imageClick(index: number) {

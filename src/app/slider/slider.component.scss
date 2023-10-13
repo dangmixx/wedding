@@ -5,18 +5,23 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 
-  .wrapper-img {
-    position: relative;
-    cursor: pointer;
+  .list-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .wrapper-img {
+      position: relative;
+      cursor: pointer;
 
-    img {
-      object-fit: cover;
-      width: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
     }
   }
 
   @include mixin.responsive(MD){
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }

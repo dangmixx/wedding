@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { PreviewImageService } from '../preview-image/preview-image.service';
 import { PreviewImageModule } from '../preview-image/preview-image.module';
-import { PhotoService } from '../photo.service';
+import { AppConfigService } from '../app.service';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 @Component({
     selector: 'app-slider',
@@ -12,7 +12,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
     providers: [PreviewImageService],
 })
 export class SliderComponent implements OnInit {
-    photoService = inject(PhotoService);
+    photoService = inject(AppConfigService);
     previewImgService = inject(PreviewImageService);
 
     public listImage: {
@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit {
     }[] = [];
 
     ngOnInit(): void {
-        this.listImage = this.photoService.getData();
+        this.listImage = this.photoService.getConfig().listImage;
     }
 
     previewImg(index: number) {

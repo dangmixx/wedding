@@ -9,7 +9,9 @@ import {
     ViewChild,
     inject,
 } from '@angular/core';
-import { Subscription, interval } from 'rxjs';
+import { Subject, Subscription, interval, takeUntil } from 'rxjs';
+import { AppConfigService } from '../app.service';
+import { AppConfig } from '../app.model';
 @Component({
     selector: 'app-location',
     templateUrl: './location.component.html',
@@ -21,33 +23,36 @@ import { Subscription, interval } from 'rxjs';
 export class LocationComponent implements OnInit {
     // Timestamp
     cdr = inject(ChangeDetectorRef);
+    #configService = inject(AppConfigService);
+    public configApp: AppConfig = this.#configService.getConfig();
 
-    targetTime = new Date('2023-10-10T12:00:00').getTime();
-    currentTime = new Date().getTime();
-    date: any;
-    difference: number = 0;
-    now: any;
+    targetTime = 0;
+    difference = 0;
     days = 0;
     hours = 0;
     minutes = 0;
     seconds = 0;
-    countDown$!: Subscription;
+    countDown$ = new Subject<void>();
 
     ngOnInit(): void {
-        this.difference = Math.floor(
-            (this.targetTime - this.currentTime) / 1000
-        );
-        if (this.difference <= 0) {
+        this.targetTime = new Date(this.configApp.targeDate).getTime();
+        const currentTime = new Date().getTime();
+        this.difference = Math.floor((this.targetTime - currentTime) / 1000);
+        if (this.difference <= 0 || !this.difference) {
+            console.error('EndTime or InvalidDate');
             this.difference = 0;
         }
-
-        this.countDown$ = interval(1000).subscribe((res) => {
-            this.difference--;
-            this.ticktock();
-            if (this.difference === 0) {
-                this.countDown$.unsubscribe();
-            }
-        });
+        interval(1000)
+            .pipe(takeUntil(this.countDown$))
+            .subscribe(() => {
+                this.difference--;
+                if (this.difference <= 0) {
+                    this.countDown$.next();
+                    this.countDown$.complete();
+                } else {
+                    this.ticktock();
+                }
+            });
     }
 
     ticktock() {
@@ -57,7 +62,7 @@ export class LocationComponent implements OnInit {
         const offsetHour = offsetDay - this.hours * 60 * 60;
         this.minutes = Math.floor(offsetHour / 60);
         const offsetMin = offsetHour - this.minutes * 60;
-        this.seconds =  Math.floor(offsetMin);
+        this.seconds = Math.floor(offsetMin);
         this.cdr.markForCheck();
     }
 }

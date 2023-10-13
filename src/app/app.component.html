@@ -1,20 +1,22 @@
-<div class="header-layout">
-  <h2 class="title-page">Title Page</h2>
+<section class="header-layout"
+         #yesIdo>
+  <h2 class="title-page">{{configApp.titlePage}}</h2>
   <h1 class="name-and-name">
     <span class="name1">
-      Name
+      {{configApp.nameOfCR}}
     </span>
     <span class="and">
       &
     </span>
     <span class="name2">
-      Name
+      {{configApp.nameOfCD}}
     </span>
   </h1>
-  <h3>Date/Month/Year</h3>
-  <h4>Location,Location,Location</h4>
+  <h3>{{configApp.targeDate | date: 'dd MMM yyyy'}}</h3>
+  <h4>{{configApp.location}}</h4>
+  <h4>{{configApp.address}}</h4>
   <div class="image">
-    <!-- <img src="assets/Title.png"> -->
+    <img [src]="configApp.bannerImage">
   </div>
 
   <div class="confetti">
@@ -22,8 +24,20 @@
       <div class="confetti-piece"></div>
     </ng-container>
   </div>
-</div>
-<app-location></app-location>
-<section class="galary">
+
+  <div class="controller-group">
+    <div class="button"
+         (click)="scrollTo(yesIdo)">Yes! I Do</div>
+    <div class="button"
+         (click)="scrollTo(location)">Location</div>
+    <div class="button"
+         (click)="scrollTo(stories)">Stories</div>
+  </div>
+</section>
+<section #location>
+  <app-location></app-location>
+</section>
+<section #stories
+         class="galary">
   <app-slider></app-slider>
 </section>
