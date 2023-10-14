@@ -22,8 +22,20 @@
       <div>{{configApp.location}}</div>
       <div>{{configApp.address}}</div>
     </div>
-    <img src="assets/LocationMap.png"
-         width="200px"
-         height="200px">
+    <a target="_blank" [href]="configApp.googleMapUrl">
+      <img src="assets/LocationMap.png"
+      width="200px"
+      height="200px">
+    </a>
+
+  </div>
+</section>
+
+<section class="dress-code"
+         *ngIf="configApp.dressCode && configApp.dressCode.length">
+  <div>Dress Code</div>
+  <div *ngFor="let code of configApp.dressCode"
+       class="dresscode-item"
+       [style]="{'background-color' :code}">
   </div>
 </section>

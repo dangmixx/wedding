@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { SliderComponent } from './slider/slider.component';
 import { LocationComponent } from './location/location.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormSubmitComponent } from './form-submit/form-submit.component';
 @NgModule({
     declarations: [AppComponent],
     imports: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
         SliderComponent,
         LocationComponent,
         HttpClientModule,
+        FormSubmitComponent
     ],
     bootstrap: [AppComponent],
 })

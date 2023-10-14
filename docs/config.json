@@ -5,7 +5,9 @@
     "nameAndOr": "and",
     "targeDate": "2023-11-18T17:00:00",
     "location": "Sky pool",
+    "dressCode": ["#f79d2f", "#ffffff", "#f7d1c0"],
     "address": "102 Le Thi Hong Gam",
+    "googleMapUrl": "https://maps.app.goo.gl/gDwL31vbc2pPavRc8",
     "phoneOfLocation": "xxx-xxx-xxx-xxx",
     "bannerImage": "https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg",
     "listImage": [
@@ -69,7 +71,6 @@
             "alt": "Description for Image 3",
             "title": "Title 3"
         }
-
     ],
     "videoUrl": ""
 }

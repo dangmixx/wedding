@@ -26,6 +26,7 @@
     bottom: 0;
     width: 100vw;
     height: 70vh;
+
     img {
       height: 100%;
       width: 100%;
@@ -35,7 +36,9 @@
     text-align: center;
   }
 
-  .info-page{
+  .info-page {
+    font-family: 'Dancing Script', cursive;
+
     z-index: 100;
     position: relative;
     display: flex;
@@ -53,25 +56,59 @@
     font-weight: bold;
   }
 
-  .controller-group{
+  .controller-group {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
     position: fixed;
     width: 100%;
-    bottom: 20px;
+    max-width: 500px;
+    bottom: 0;
     z-index: 100;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
-    .button{
-      background-color: white;
-      padding: 20px;
-      border-radius: 20px;
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: white;
+      // animation-name: boxShadow;
+      // animation-duration: 2s;
+      // animation-iteration-count: infinite;
+
+      i {
+        font-size: 52px;
+        color: linear-gradient(red, yellow);
+        // box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+
+      }
     }
 
-    @include mixin.responsive(MD){
-      width: 500px;
+    @include mixin.responsive(MD) {
+      width: 80px;
+      flex-direction: column;
+      bottom: 50%;
+      right: 10px;
+      height: 250px;
     }
   }
 }
+
+// @keyframes boxShadow {
+//   0% {
+//     box-shadow: 0 0 10px red, 0 0 10px red, 0 0 10px red;
+//   }
+
+//   25% {
+//     box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
+//   }
+
+//   100% {
+//     box-shadow: 0 0 10px red, 0 0 30px red, 0 0 40px red;
+//   }
+// }
 
 .galary {
   max-width: 1400px;

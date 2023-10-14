@@ -1,78 +1,102 @@
 @use '../../mixin.scss' as mixin;
 
-.location-container {
-  font-weight: bold;
-  font-size: 24px;
-  .location-info {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+:host {
+  font-family: 'Dancing Script', cursive;
 
-    @include mixin.responsive(MD) {
-      flex-direction: row;
-      text-align: start;
-    }
-  }
-}
+  .location-container {
+    font-weight: bold;
+    font-size: 24px;
 
-.count-down-timer {
-  box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
-  text-align: center;
-  background-color: #BF1725;
-  font-weight: bold;
-  max-width: 400px;
-  margin: 20px auto;
-  color: #fff;
-  border-radius: 6px;
-  padding: 10px;
+    .location-info {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
 
-  >p {
-    margin: 5px 0 15px 0;
-  }
-
-  .wrapper {
-
-    .description,
-    .times {
-      display: grid;
-      grid-template-columns: repeat(4, calc(25% - 8px));
-      grid-column-gap: 10px;
-    }
-
-    .description {
-      >p {
-        margin: 0;
-        font-size: 20px;
+      @include mixin.responsive(MD) {
+        flex-direction: row;
+        text-align: start;
       }
     }
+  }
 
-    .times {
-      p {
-        letter-spacing: -5px;
-        position: relative;
-        margin: 0;
-        font-size: 40px;
+  .count-down-timer {
+    box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
+    text-align: center;
+    background-color: #BF1725;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
 
-        ::ng-deep img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 30px;
-          display: block;
-          height: 30px;
+    >p {
+      margin: 5px 0 15px 0;
+    }
+
+    .wrapper {
+
+      .description,
+      .times {
+        display: grid;
+        grid-template-columns: repeat(4, calc(25% - 8px));
+        grid-column-gap: 10px;
+      }
+
+      .description {
+        >p {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+
+      .times {
+        p {
+          letter-spacing: -5px;
+          position: relative;
+          margin: 0;
+          font-size: 40px;
+
+          ::ng-deep img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            display: block;
+            height: 30px;
+          }
         }
       }
     }
   }
-}
 
-@media screen and (max-width: 430px) {
-  .count-down-timer {
-    margin: 20px;
+  @media screen and (max-width: 430px) {
+    .count-down-timer {
+      margin: 20px;
+    }
   }
+
+  .dress-code {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .dresscode-item {
+      height: 50px;
+      width: 50px;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+  }
+
 }

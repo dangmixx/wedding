@@ -4,12 +4,14 @@ export interface AppConfig {
     nameOfCD: string;
     nameAndOr: string;
     targeDate: string;
+    googleMapUrl: string;
     location: string;
     address: string;
     phoneOfLocation: string;
     bannerImage: string;
     listImage: ListImage[];
     videoUrl: string;
+    dressCode: string[]
 }
 
 export interface ListImage {

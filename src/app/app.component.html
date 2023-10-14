@@ -30,11 +30,17 @@
 
   <div class="controller-group">
     <div class="button"
-         (click)="scrollTo(yesIdo)">Yes! I Do</div>
+         (click)="scrollTo(location)">
+      <i class="ico ico-circle_heart"></i>
+    </div>
     <div class="button"
-         (click)="scrollTo(location)">Location</div>
+         (click)="scrollTo(location)">
+      <i class="ico ico-map-pin"></i>
+    </div>
     <div class="button"
-         (click)="scrollTo(stories)">Stories</div>
+         (click)="scrollTo(stories)">
+      <i class="ico ico-profile-img-favor"></i>
+    </div>
   </div>
 </section>
 <section #location>
@@ -43,4 +49,7 @@
 <section #stories
          class="galary">
   <app-slider></app-slider>
+</section>
+<section>
+  <app-form-submit></app-form-submit>
 </section>

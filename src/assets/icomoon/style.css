@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u6q0do');
-  src:  url('fonts/icomoon.eot?u6q0do#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u6q0do') format('truetype'),
-    url('fonts/icomoon.woff?u6q0do') format('woff'),
-    url('fonts/icomoon.svg?u6q0do#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?b3z9x1');
+  src:  url('fonts/icomoon.eot?b3z9x1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b3z9x1') format('truetype'),
+    url('fonts/icomoon.woff?b3z9x1') format('woff'),
+    url('fonts/icomoon.svg?b3z9x1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -78,4 +78,16 @@
 }
 .ico-clear:before {
   content: "\e9a5";
+}
+.ico-photo-video-solid:before {
+  content: "\e901";
+}
+.ico-map-marker-alt-solid:before {
+  content: "\e902";
+}
+.ico-hand-holding-heart-solid:before {
+  content: "\e903";
+}
+.ico-circle_heart:before {
+  content: "\e904";
 }
