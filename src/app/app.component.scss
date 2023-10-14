@@ -26,13 +26,9 @@
     bottom: 0;
     width: 100vw;
     height: 70vh;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
   }
 
@@ -73,21 +69,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      // background-color: white;
-      // animation-name: boxShadow;
-      // animation-duration: 2s;
-      // animation-iteration-count: infinite;
 
       i {
-        font-size: 52px;
+        font-size: 32px;
         color: linear-gradient(red, yellow);
-        // box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
-
       }
     }
 
     @include mixin.responsive(MD) {
-      width: 80px;
+      width: 64px;
       flex-direction: column;
       bottom: 50%;
       right: 10px;

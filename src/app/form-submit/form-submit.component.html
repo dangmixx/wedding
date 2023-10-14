@@ -1,13 +1,16 @@
-<div class="form-container"
-     #form>
-  <div class="text">
-    Cảm ơn bạn đã đến!
+<div class="form-container">
+  <div class="title">
+    Check-in buổi tiệc của chúng mình!
   </div>
-  <form action="#">
+  <div class="sub-title">
+    Để chúng mình có thể chuẩn bị buổi tiệc tốt nhất!
+  </div>
+  <form [formGroup]="formGroup"
+        (ngSubmit)="submitForm()">
     <div class="form-row">
       <div class="input-data">
         <input type="text"
-               required>
+               formControlName="Name">
         <div class="underline"></div>
         <label for="">Tên của bạn</label>
       </div>
@@ -15,30 +18,65 @@
     <div class="form-row">
       <div class="input-data checkbox">
         <input type="checkbox"
-               required>
+               formControlName="Yes">
         <div class="underline"></div>
         <label for="">Bạn sẽ đến</label>
       </div>
-      <div class="input-data">
-        <input type="text"
-               required>
-        <div class="underline"></div>
-        <label for="">Số người bạn đến cùng</label>
+      <div class="input-data input-radio">
+        <div class="radio-container tooltip">
+          <input type="radio"
+                 id="Quality1"
+                 formControlName="Quality"
+                 hidden
+                 value="1">
+          <label for="Quality1">
+            <i class="ico ico-heart"></i>
+            <i class="ico ico-heart-fill checked"></i>
+            <span class="tooltiptext">Mình tôi</span>
+          </label>
+        </div>
+        <div class="radio-container tooltip">
+          <input type="radio"
+                 id="Quality2"
+                 formControlName="Quality"
+                 hidden
+                 value="2">
+          <label for="Quality2">
+            <i class="ico ico-heart-plus"></i>
+            <i class="ico ico-heart-plus-fill checked"></i>
+            <span class="tooltiptext">+ My love</span>
+          </label>
+        </div>
+        <div class="radio-container tooltip">
+          <input type="radio"
+                 id="Quality3"
+                 formControlName="Quality"
+                 hidden
+                 value="3">
+          <label for="Quality3">
+            <i class="ico ico-heart-family"></i>
+            <i class="ico ico-group-heart-fill checked"></i>
+            <span class="tooltiptext">+ Gia đình nhỏ </span>
+          </label>
+        </div>
+
       </div>
     </div>
     <div class="form-row">
       <div class="input-data textarea">
         <textarea rows="8"
+                  formControlName="Note"
+                  hidden
                   cols="80"
                   required></textarea>
         <br />
         <div class="underline"></div>
-        <label for="">Vài điều muốn nói :3</label>
+        <label for="">Lời nhắn riêng cho cô dâu chú rể:</label>
         <br />
       </div>
     </div>
     <div class="button-form">
-      <button>
+      <button type="submit">
         Submit
       </button>
     </div>

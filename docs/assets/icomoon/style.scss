@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b3z9x1');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b3z9x1#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?b3z9x1') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?b3z9x1') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?b3z9x1##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?y3biq7');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?y3biq7#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?y3biq7') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?y3biq7') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?y3biq7##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -135,6 +135,36 @@
 .ico-circle_heart {
   &:before {
     content: $ico-circle_heart; 
+  }
+}
+.ico-heart-family {
+  &:before {
+    content: $ico-heart-family; 
+  }
+}
+.ico-heart-plus {
+  &:before {
+    content: $ico-heart-plus; 
+  }
+}
+.ico-heart {
+  &:before {
+    content: $ico-heart; 
+  }
+}
+.ico-heart-plus-fill {
+  &:before {
+    content: $ico-heart-plus-fill; 
+  }
+}
+.ico-group-heart-fill {
+  &:before {
+    content: $ico-group-heart-fill; 
+  }
+}
+.ico-heart-fill {
+  &:before {
+    content: $ico-heart-fill; 
   }
 }
 

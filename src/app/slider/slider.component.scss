@@ -18,10 +18,16 @@
         width: 100%;
       }
     }
+    &.extra-md{
+      display: none;
+    }
   }
 
   @include mixin.responsive(MD){
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    .list-img.extra-md{
+      display: flex;
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-    "titlePage": "Save of Date",
+    "titlePage": "Save the Date",
     "nameOfCR": "Toàn",
     "nameOfCD": "Nhung",
     "nameAndOr": "and",
@@ -9,65 +9,90 @@
     "address": "102 Le Thi Hong Gam",
     "googleMapUrl": "https://maps.app.goo.gl/gDwL31vbc2pPavRc8",
     "phoneOfLocation": "xxx-xxx-xxx-xxx",
-    "bannerImage": "https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg",
+    "bannerImage": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9578.jpg",
     "listImage": [
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-1.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0042.jpg",
             "alt": "Description for Image 1",
             "title": "Title 1"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-2.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0056.jpg",
             "alt": "Description for Image 2",
             "title": "Title 2"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-3.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0084.jpg",
             "alt": "Description for Image 3",
             "title": "Title 3"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-4.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0210.jpg",
             "alt": "Description for Image 4",
             "title": "Title 4"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-5.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0245.jpg",
             "alt": "Description for Image 5",
             "title": "Title 5"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-4.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0305.jpg",
             "alt": "Description for Image 4",
             "title": "Title 4"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-5.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0343.jpg",
             "alt": "Description for Image 5",
             "title": "Title 5"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-6.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0506.jpg",
             "alt": "Description for Image 6",
             "title": "Title 6"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-6.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0582.jpg",
             "alt": "Description for Image 6",
             "title": "Title 6"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-1.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0611.jpg",
             "alt": "Description for Image 1",
             "title": "Title 1"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-2.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN0620.jpg",
             "alt": "Description for Image 2",
             "title": "Title 2"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/Images/cat-3.jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9578.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9964.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },  {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9741.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },  {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9926.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },  {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9700.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },  {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9797.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },  {
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/NHAN9899.jpg",
             "alt": "Description for Image 3",
             "title": "Title 3"
         }

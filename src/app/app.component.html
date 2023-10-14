@@ -18,8 +18,8 @@
     <h4>{{configApp.address}}</h4>
   </div>
 
-  <div class="image">
-    <img [src]="configApp.bannerImage">
+  <div class="image" [style]="{'background-image' : 'url(' + configApp.bannerImage + ')'}">
+    <!-- <img [src]="configApp.bannerImage"> -->
   </div>
 
   <div class="confetti">
@@ -39,7 +39,7 @@
     </div>
     <div class="button"
          (click)="scrollTo(stories)">
-      <i class="ico ico-profile-img-favor"></i>
+      <i class="ico ico-photo-video-solid"></i>
     </div>
   </div>
 </section>
