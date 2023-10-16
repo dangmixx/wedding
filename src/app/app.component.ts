@@ -1,7 +1,6 @@
 import { Component, ElementRef, OnInit, inject } from '@angular/core';
 import { AppConfigService } from './app.service';
 import { AppConfig } from './app.model';
-import { DOCUMENT } from '@angular/common';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -10,7 +9,6 @@ import { DOCUMENT } from '@angular/common';
 })
 export class AppComponent implements OnInit {
     #configService = inject(AppConfigService);
-    #document = inject(DOCUMENT);
     public configApp: AppConfig = this.#configService.getConfig();
     displayCustom = false;
     activeIndex: number = 0;
@@ -35,8 +33,11 @@ export class AppComponent implements OnInit {
         },
     ];
 
+    public bannerCover = encodeURI(this.configApp.bannerImage);
+
     ngOnInit(): void {
         // this.#sheetService.getInvitation().subscribe(console.log);
+        console.log(this.bannerCover)
     }
 
     public scrollTo(element: HTMLElement) {

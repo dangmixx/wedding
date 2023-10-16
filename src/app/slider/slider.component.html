@@ -1,25 +1,28 @@
 <div class="list-img-container">
   <div class="list-img">
-    <ng-container *ngFor="let img of listImage | slice : 0: 6; let i=index">
+    <ng-container *ngFor="let img of column1; let i=index">
       <div class="wrapper-img"
            (click)="previewImg(i)">
-        <img [src]="img.itemImageSrc">
+        <img [src]="img.itemImageSrc"
+             [alt]="img.alt">
       </div>
     </ng-container>
   </div>
   <div class="list-img">
-    <ng-container *ngFor="let img of listImage | slice : 6: 12; let i=index">
+    <ng-container *ngFor="let img of column2; let i=index">
       <div class="wrapper-img"
            (click)="previewImg(i+6)">
-        <img [src]="img.itemImageSrc">
+        <img [src]="img.itemImageSrc"
+             [alt]="img.alt">
       </div>
     </ng-container>
   </div>
   <div class="list-img extra-md">
-    <ng-container *ngFor="let img of listImage | slice : 12: 18; let i=index">
+    <ng-container *ngFor="let img of column3; let i=index">
       <div class="wrapper-img"
            (click)="previewImg(i+6)">
-        <img [src]="img.itemImageSrc">
+        <img [src]="img.itemImageSrc"
+             [alt]="img.alt">
       </div>
     </ng-container>
   </div>

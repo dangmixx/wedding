@@ -14,11 +14,10 @@
       </span>
     </h1>
     <h3>{{configApp.targeDate | date: 'dd MMM yyyy'}}</h3>
-    <h4>{{configApp.location}}</h4>
-    <h4>{{configApp.address}}</h4>
   </div>
 
-  <div class="image" [style]="{'background-image' : 'url(' + configApp.bannerImage + ')'}">
+  <div class="image"
+       [style.background-image]='"url(\"" + bannerCover + "\")"'>
     <!-- <img [src]="configApp.bannerImage"> -->
   </div>
 
@@ -30,7 +29,7 @@
 
   <div class="controller-group">
     <div class="button"
-         (click)="scrollTo(location)">
+         (click)="scrollTo(form)">
       <i class="ico ico-circle_heart"></i>
     </div>
     <div class="button"
@@ -50,6 +49,6 @@
          class="galary">
   <app-slider></app-slider>
 </section>
-<section>
+<section #form>
   <app-form-submit></app-form-submit>
 </section>
