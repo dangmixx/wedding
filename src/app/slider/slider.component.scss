@@ -25,7 +25,7 @@
 
   @include mixin.responsive(MD){
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
     .list-img.extra-md{
       display: flex;
     }

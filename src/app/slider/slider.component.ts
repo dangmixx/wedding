@@ -57,7 +57,13 @@ export class SliderComponent implements OnInit {
         },
         {
             itemImageSrc:
-                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (40).jpg',
+                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (20).jpg',
+            alt: 'Dalat-4',
+            title: 'Dalat4',
+        },
+        {
+            itemImageSrc:
+                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (4).jpg',
             alt: 'Dalat-4',
             title: 'Dalat4',
         },
@@ -75,7 +81,7 @@ export class SliderComponent implements OnInit {
         },
         {
             itemImageSrc:
-                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (31).jpg',
+                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (16).jpg',
             alt: 'Dalat-6',
             title: 'Dalat6',
         },
@@ -138,7 +144,7 @@ export class SliderComponent implements OnInit {
         },
         {
             itemImageSrc:
-                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (16).jpg',
+                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (31).jpg',
             alt: 'Dalat-12',
             title: 'Dalat12',
         },
@@ -177,7 +183,7 @@ export class SliderComponent implements OnInit {
         },
         {
             itemImageSrc:
-                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (4).jpg',
+                'https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (2).jpg',
             alt: 'Dalat-18',
             title: 'Dalat18',
         },

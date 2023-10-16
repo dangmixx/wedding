@@ -8,7 +8,8 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: var(--bg-page);
+  // background-color: var(--bg-page);
+  background: radial-gradient(circle, rgba(86,30,26,1) 0%, rgba(105,18,11,1) 7%, rgba(45,12,11,1) 100%);
   color: white;
   overflow: hidden;
 
@@ -16,8 +17,9 @@
   h2,
   h3,
   h4 {
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    line-height: 1em;
   }
 
   .image {
@@ -33,6 +35,7 @@
     box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
     @include mixin.responsive(XL){
       background-position: top;
+      background-size: auto;
     }
 
   }
@@ -49,12 +52,16 @@
   }
 
   .title-page {
-    font-size: 32px;
+    margin-top: 15px;
+    font-size: 18px;
   }
 
   .name-and-name {
     font-size: 60px;
     font-weight: bold;
+    @include mixin.responsive(XL){
+      font-size: 90px;
+    }
   }
 
   .controller-group {
