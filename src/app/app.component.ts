@@ -51,12 +51,8 @@ export class AppComponent implements OnInit {
         });
     }
 
-    public testSubmitData() {
-        this.#configService.postData().subscribe(console.log);
-    }
-
     public testSubmitForm() {
-        this.#configService.postGoogleSheet().subscribe(console.log);
+        // this.#configService.postGoogleSheet().subscribe(console.log);
     }
 
     imageClick(index: number) {

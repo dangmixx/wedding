@@ -1,4 +1,5 @@
-<div class="form-container">
+<div class="form-container"
+     *ngIf="!submitted ;else thankForm">
   <div class="title">
     Check-in buổi tiệc của chúng mình!
   </div>
@@ -13,6 +14,32 @@
                formControlName="Name">
         <div class="underline"></div>
         <label for="">Tên của bạn</label>
+      </div>
+      <div class="input-data input-radio">
+        <div class="radio-container tooltip">
+          <input type="radio"
+                 id="FromCD"
+                 formControlName="From"
+                 hidden
+                 value="CD">
+          <label for="FromCD">
+            <i class="ico ico-bride"></i>
+            <i class="ico ico-bride checked"></i>
+            <span class="tooltiptext">Bạn Cô Dâu</span>
+          </label>
+        </div>
+        <div class="radio-container tooltip">
+          <input type="radio"
+                 id="FromCR"
+                 formControlName="From"
+                 hidden
+                 value="CR">
+          <label for="FromCR">
+            <i class="ico ico-groom"></i>
+            <i class="ico ico-groom checked"></i>
+            <span class="tooltiptext">Bạn Chú Rể</span>
+          </label>
+        </div>
       </div>
     </div>
     <div class="form-row">
@@ -76,9 +103,21 @@
       </div>
     </div>
     <div class="button-form">
-      <button type="submit">
+      <button type="submit"
+              [disabled]="submitting">
         Submit
       </button>
     </div>
   </form>
 </div>
+<ng-template #thankForm>
+  <div class="form-container"
+       *ngIf="submitted">
+    <div class="title">
+      Check-in thành công!
+    </div>
+    <div class="sub-title">
+      Cảm ơn bạn đã check-in. Hãy cùng nhau chia sẻ khoảng khác đáng yêu này với cô Dâu và chú Rể nhé!
+    </div>
+  </div>
+</ng-template>

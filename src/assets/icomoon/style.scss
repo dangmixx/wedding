@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?y3biq7');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?y3biq7#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?y3biq7') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?y3biq7') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?y3biq7##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bbrcwv');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bbrcwv#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?bbrcwv') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?bbrcwv') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?bbrcwv##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -165,6 +165,16 @@
 .ico-heart-fill {
   &:before {
     content: $ico-heart-fill; 
+  }
+}
+.ico-bride {
+  &:before {
+    content: $ico-bride; 
+  }
+}
+.ico-groom {
+  &:before {
+    content: $ico-groom; 
   }
 }
 

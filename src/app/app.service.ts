@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import * as config from '../config.json';
-import { AppConfig } from './app.model';
+import { AppConfig, InvitationFrom } from './app.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
@@ -10,24 +10,13 @@ export class AppConfigService {
     getConfig(): AppConfig {
         return config;
     }
-
-    postData() {
-        return this.#http.post(this.#url, {
-            data: [
-                {
-                    Name: 'Name',
-                    Quality: 2,
-                    Yes: true,
-                },
-            ],
-        });
-    }
-
-    postGoogleSheet() {
+    postGoogleSheet(dataForm: InvitationFrom | any) {
         const data = {
-            'entry.2105488832': 'Name',
-            'entry.661987652': 'Qua',
-            'entry.480909358': 'Yes',
+            'entry.2105488832': dataForm.Name,
+            'entry.659467747': dataForm.From,
+            'entry.661987652': dataForm.Quality,
+            'entry.480909358': dataForm.Yes ? 'Yes' : 'No',
+            'entry.200497512': dataForm.Note,
         };
         const bodyData = new URLSearchParams(data);
 

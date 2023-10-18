@@ -11,11 +11,19 @@ export interface AppConfig {
     bannerImage: string;
     listImage: ListImage[];
     videoUrl: string;
-    dressCode: string[]
+    dressCode: string[];
 }
 
 export interface ListImage {
     itemImageSrc: string;
     alt: string;
     title: string;
+}
+
+export interface InvitationFrom {
+    Name: string;
+    From: string;
+    Quality: string;
+    Yes: boolean;
+    Note: string;
 }
