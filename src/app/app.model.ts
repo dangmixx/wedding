@@ -9,6 +9,9 @@ export interface AppConfig {
     address: string;
     phoneOfLocation: string;
     bannerImage: string;
+    columnImage1: ListImage[];
+    columnImage2: ListImage[];
+    columnImage3: ListImage[];
     listImage: ListImage[];
     videoUrl: string;
     dressCode: string[];
