@@ -4,11 +4,12 @@
     "nameOfCD": "Nhung",
     "nameAndOr": "and",
     "targeDate": "2023-11-18T17:00:00",
-    "location": "Sky pool",
+    "location": "Happy Life Grand Hotel",
     "dressCode": ["#f79d2f", "#ffffff", "#f7d1c0"],
-    "address": "102 Le Thi Hong Gam",
+    "address": "Sảnh Sky Pool, 102 Lê Thị Hồng Gấm, Phường Nguyễn Thái Bình, Quận 1",
     "googleMapUrl": "https://maps.app.goo.gl/gDwL31vbc2pPavRc8",
     "phoneOfLocation": "xxx-xxx-xxx-xxx",
+    "timeLineImage": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/time-line-1.png",
     "bannerImage": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (40).jpg",
     "columnImage1": [
         {
@@ -27,22 +28,7 @@
             "title": "Column-1"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (20).jpg",
-            "alt": "Column-1",
-            "title": "Column-1"
-        },
-        {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (4).jpg",
-            "alt": "Column-1",
-            "title": "Column-1"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (5).jpg",
-            "alt": "Column-1",
-            "title": "Column-1"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (6).jpg",
             "alt": "Column-1",
             "title": "Column-1"
         },
@@ -58,8 +44,9 @@
             "alt": "Column-2",
             "title": "Column-2"
         },
+
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (43).jpg",
+            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (39).jpg",
             "alt": "Column-2",
             "title": "Column-2"
         },
@@ -69,17 +56,7 @@
             "title": "Column-2"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (39).jpg",
-            "alt": "Column-2",
-            "title": "Column-2"
-        },
-        {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (26).jpg",
-            "alt": "Column-2",
-            "title": "Column-2"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (29).jpg",
             "alt": "Column-2",
             "title": "Column-2"
         },
@@ -88,16 +65,7 @@
             "alt": "Column-2",
             "title": "Column-2"
         },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (10).jpg",
-            "alt": "Column-2",
-            "title": "Column-2"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (13).jpg",
-            "alt": "Column-2",
-            "title": "Column-2"
-        },
+
         {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (31).jpg",
             "alt": "Column-2",
@@ -116,27 +84,12 @@
             "title": "Column-3"
         },
         {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (12).jpg",
-            "alt": "Column-3",
-            "title": "Column-3"
-        },
-        {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (28).jpg",
             "alt": "Column-3",
             "title": "Column-3"
         },
         {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (17).jpg",
-            "alt": "Column-3",
-            "title": "Column-3"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (2).jpg",
-            "alt": "Column-3",
-            "title": "Column-3"
-        },
-        {
-            "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Dalat (24).jpg",
             "alt": "Column-3",
             "title": "Column-3"
         },

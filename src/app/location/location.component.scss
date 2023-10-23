@@ -1,11 +1,15 @@
 @use '../../mixin.scss' as mixin;
 
 :host {
-  font-family: 'Dancing Script', cursive;
-
+  font-family: 'Montserrat', sans-serif;
+  white-space: 1px;
   .location-container {
     font-weight: bold;
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 
     .location-info {
       margin: 20px;
@@ -16,10 +20,49 @@
       text-align: center;
       align-items: center;
 
+      .location-name{
+        .name{
+          color: #741411;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .address{
+          font-size: 14px;
+        }
+      }
+
       @include mixin.responsive(MD) {
-        flex-direction: row;
+        // flex-direction: row;
         text-align: start;
       }
+    }
+
+    .dress-code {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+
+      .dresscode-item {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+    }
+    .timeline{
+      img{
+        display: block;
+        margin: auto;
+      }
+    }
+    @include mixin.responsive(MD) {
+      flex-direction: row;
     }
   }
 
@@ -48,6 +91,7 @@
       }
 
       .description {
+        font-weight: normal;
         >p {
           margin: 0;
           font-size: 20px;
@@ -56,7 +100,6 @@
 
       .times {
         p {
-          letter-spacing: -5px;
           position: relative;
           margin: 0;
           font-size: 40px;
@@ -80,23 +123,4 @@
       margin: 20px;
     }
   }
-
-  .dress-code {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-
-    .dresscode-item {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #fff;
-      border-radius: 50px;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-  }
-
 }

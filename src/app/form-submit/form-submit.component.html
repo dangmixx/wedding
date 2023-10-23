@@ -1,11 +1,11 @@
 <div class="form-container"
      *ngIf="!submitted ;else thankForm">
   <div class="title">
-    Check-in buổi tiệc của chúng mình!
+    Gửi lời chúc đến cô Dâu và Chú rể
   </div>
-  <div class="sub-title">
-    Buổi tiệc thật sự trọn vẹn nếu có sự góp mặt của Bạn, khoảnh khắc này sẽ được lưu lại mãi cùng hạnh phúc của cô Dâu và chú Rể.
-  </div>
+  <!-- <div class="sub-title">
+    Hãy để lại thông tin của bạn, điều đó có thể giúp chúng mình có thể chuẩn bị bữa tiệc được tốt nhất.
+  </div> -->
   <form [formGroup]="formGroup"
         (ngSubmit)="submitForm()">
     <div class="form-row">
@@ -101,6 +101,10 @@
         <label for="">Lời nhắn riêng cho cô dâu chú rể:</label>
         <br />
       </div>
+    </div>
+    <div class="sub-title sub-2">
+      Buổi tiệc thật sự trọn vẹn nếu có sự góp mặt của Bạn.
+      Khoảnh khắc này sẽ được lưu lại mãi cùng hạnh phúc của cô Dâu và chú Rể.
     </div>
     <div class="button-form">
       <button type="submit"
