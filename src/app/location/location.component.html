@@ -18,18 +18,27 @@
 
 <section class="location-container">
   <div class="location-info">
-    <div class="location-name">
-      <div class="name">{{configApp.location}}</div>
-      <div class="address">{{configApp.address}}</div>
-    </div>
     <a target="_blank"
-       [href]="configApp.googleMapUrl">
+       [href]="configApp.googleMapUrl"
+       class="location-name">
+      <div class="name">{{configApp.location}}</div>
+      <div class="address">{{configApp.address}}
+        <span>
+          <img src="assets/icon-google-map.webp"
+          width="24">
+        </span>
+      </div>
+
+    </a>
+    <a target="_blank"
+       [href]="configApp.googleMapUrl"
+       class="location-image">
       <img src="assets/party.jpg"
            width="300px"
            height="200px">
     </a>
     <div class="dress-code"
-             *ngIf="configApp.dressCode && configApp.dressCode.length">
+         *ngIf="configApp.dressCode && configApp.dressCode.length">
       <div>Dress code</div>
       <div *ngFor="let code of configApp.dressCode"
            class="dresscode-item"
@@ -40,7 +49,7 @@
 
 
   <div class="timeline"
-           *ngIf="configApp.timeLineImage">
+       *ngIf="configApp.timeLineImage">
     <img [src]="configApp.timeLineImage"
          width="300px">
   </div>
