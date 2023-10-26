@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%;
   // background-color: var(--bg-page);
-  background: radial-gradient(circle, rgba(86,30,26,1) 0%, rgba(105,18,11,1) 7%, rgba(45,12,11,1) 100%);
+  background: radial-gradient(circle, rgba(86, 30, 26, 1) 0%, rgba(105, 18, 11, 1) 7%, rgba(45, 12, 11, 1) 100%);
   color: white;
   overflow: hidden;
 
@@ -20,6 +20,7 @@
     margin-block-start: 5px;
     margin-block-end: 5px;
     line-height: 1em;
+    font-weight: normal;
   }
 
   .image {
@@ -33,7 +34,8 @@
     background-size: cover;
     text-align: center;
     box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
-    @include mixin.responsive(XL){
+
+    @include mixin.responsive(XL) {
       background-position: top;
       background-size: auto;
     }
@@ -41,8 +43,9 @@
   }
 
   .info-page {
-    font-family: 'Dancing Script', cursive;
-    text-shadow: 2px 4px 9px rgba(0,0,0,0.49);
+
+    // font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 4px 9px rgba(0, 0, 0, 0.49);
     z-index: 100;
     position: relative;
     display: flex;
@@ -52,16 +55,26 @@
   }
 
   .title-page {
-    margin-top: 15px;
-    font-size: 18px;
+    margin-top: 5px;
+    font-size: 14px;
+    @include mixin.responsive(XL) {
+      margin-top: 15px;
+      font-size: 12px;
+    }
   }
 
   .name-and-name {
-    font-size: 60px;
+    font-family: 'Rouge Script', cursive;
+    font-size: 40px;
     font-weight: bold;
-    @include mixin.responsive(XL){
+
+    @include mixin.responsive(XL) {
       font-size: 90px;
     }
+  }
+
+  .date-time{
+    // font-size: 24px;
   }
 
   .controller-group {
@@ -97,7 +110,7 @@
     }
   }
 
-  .play-audio{
+  .play-audio {
     position: fixed;
     right: 20px;
     top: 20px;
@@ -113,15 +126,17 @@
     color: var(--color-primary);
     box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
     cursor: pointer;
-    &.paused{
+
+    &.paused {
       color: var(--color-secondary);
     }
-    &.play{
+
+    &.play {
       animation-name: scale-note;
       animation-duration: 2s;
       animation-iteration-count: infinite;
 
-      i{
+      i {
         margin-top: 2px;
       }
     }
@@ -130,7 +145,7 @@
 
 @keyframes scale-note {
   0% {
-   scale: 1;
+    scale: 1;
   }
 
   55% {

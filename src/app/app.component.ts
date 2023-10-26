@@ -1,13 +1,21 @@
-import { Component, ElementRef, OnInit, ViewChild, inject } from '@angular/core';
+import {
+    AfterViewInit,
+    Component,
+    ElementRef,
+    OnInit,
+    ViewChild,
+    inject,
+} from '@angular/core';
 import { AppConfigService } from './app.service';
 import { AppConfig } from './app.model';
+import { fromEvent, skip, take } from 'rxjs';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     providers: [AppConfigService],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
     #configService = inject(AppConfigService);
     public configApp: AppConfig = this.#configService.getConfig();
     displayCustom = false;
@@ -42,6 +50,16 @@ export class AppComponent implements OnInit {
         console.log(this.bannerCover);
     }
 
+    ngAfterViewInit(): void {
+        fromEvent(window, 'click')
+            .pipe(take(1))
+            .subscribe((res) => {
+                if (this.audio.nativeElement.paused) {
+                    this.audio.nativeElement.play();
+                }
+            });
+    }
+
     public scrollTo(element: HTMLElement) {
         const topScroll =
             element.offsetTop > 100
@@ -59,9 +77,9 @@ export class AppComponent implements OnInit {
     }
 
     playAudio() {
-        if(this.audio.nativeElement.paused){
+        if (this.audio.nativeElement.paused) {
             this.audio.nativeElement.play();
-        }else{
+        } else {
             this.audio.nativeElement.pause();
         }
     }

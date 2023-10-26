@@ -13,7 +13,7 @@
         {{configApp.nameOfCD}}
       </span>
     </h1>
-    <h3>{{configApp.targeDate | date: 'dd.MM.yyyy'}}</h3>
+    <h3 class="date-time">{{configApp.targeDate | date: 'dd.MM.yyyy'}}</h3>
   </div>
   <audio #audio hidden autoplay loop>
     <source [src]="configApp.audioUrl" type="audio/mpeg">
