@@ -49,9 +49,8 @@ export class SliderComponent implements OnInit {
             (src) =>
                 listImageFilter.findIndex(
                     (e) => e.itemImageSrc === src.itemImageSrc
-                ) !== -1
+                ) === -1
         );
-
         this.listImage = [...listImageFilter, ...listImageAdd];
     }
 
