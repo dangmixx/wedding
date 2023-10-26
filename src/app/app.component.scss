@@ -96,21 +96,51 @@
       height: 250px;
     }
   }
+
+  .play-audio{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 30px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    &.paused{
+      color: var(--color-secondary);
+    }
+    &.play{
+      animation-name: scale-note;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+
+      i{
+        margin-top: 2px;
+      }
+    }
+  }
 }
 
-// @keyframes boxShadow {
-//   0% {
-//     box-shadow: 0 0 10px red, 0 0 10px red, 0 0 10px red;
-//   }
+@keyframes scale-note {
+  0% {
+   scale: 1;
+  }
 
-//   25% {
-//     box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
-//   }
+  55% {
+    scale: 1.1;
+  }
 
-//   100% {
-//     box-shadow: 0 0 10px red, 0 0 30px red, 0 0 40px red;
-//   }
-// }
+  100% {
+    scale: 0.9;
+  }
+}
 
 .galary {
   max-width: 1400px;

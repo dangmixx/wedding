@@ -16,6 +16,7 @@ export interface AppConfig {
     videoUrl: string;
     dressCode: string[];
     timeLineImage?: string;
+    audioUrl?: string;
 }
 
 export interface ListImage {

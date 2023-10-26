@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, inject } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, inject } from '@angular/core';
 import { AppConfigService } from './app.service';
 import { AppConfig } from './app.model';
 @Component({
@@ -34,10 +34,12 @@ export class AppComponent implements OnInit {
     ];
 
     public bannerCover = encodeURI(this.configApp.bannerImage);
+    public isAudioPlay = false;
+
+    @ViewChild('audio', { static: true }) audio!: ElementRef<HTMLAudioElement>;
 
     ngOnInit(): void {
-        // this.#sheetService.getInvitation().subscribe(console.log);
-        console.log(this.bannerCover)
+        console.log(this.bannerCover);
     }
 
     public scrollTo(element: HTMLElement) {
@@ -51,12 +53,16 @@ export class AppComponent implements OnInit {
         });
     }
 
-    public testSubmitForm() {
-        // this.#configService.postGoogleSheet().subscribe(console.log);
-    }
-
     imageClick(index: number) {
         this.activeIndex = index;
         this.displayCustom = true;
+    }
+
+    playAudio() {
+        if(this.audio.nativeElement.paused){
+            this.audio.nativeElement.play();
+        }else{
+            this.audio.nativeElement.pause();
+        }
     }
 }

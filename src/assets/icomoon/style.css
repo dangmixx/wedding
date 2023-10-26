@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?bbrcwv');
-  src:  url('fonts/icomoon.eot?bbrcwv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bbrcwv') format('truetype'),
-    url('fonts/icomoon.woff?bbrcwv') format('woff'),
-    url('fonts/icomoon.svg?bbrcwv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4ojeo8');
+  src:  url('fonts/icomoon.eot?4ojeo8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4ojeo8') format('truetype'),
+    url('fonts/icomoon.woff?4ojeo8') format('woff'),
+    url('fonts/icomoon.svg?4ojeo8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -114,4 +114,10 @@
 }
 .ico-groom:before {
   content: "\e90e";
+}
+.ico-music-note:before {
+  content: "\e911";
+}
+.ico-music-note-off:before {
+  content: "\e913";
 }

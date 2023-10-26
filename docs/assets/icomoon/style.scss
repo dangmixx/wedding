@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bbrcwv');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bbrcwv#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?bbrcwv') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?bbrcwv') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?bbrcwv##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4ojeo8');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4ojeo8#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?4ojeo8') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?4ojeo8') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?4ojeo8##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -175,6 +175,16 @@
 .ico-groom {
   &:before {
     content: $ico-groom; 
+  }
+}
+.ico-music-note {
+  &:before {
+    content: $ico-music-note; 
+  }
+}
+.ico-music-note-off {
+  &:before {
+    content: $ico-music-note-off; 
   }
 }
 

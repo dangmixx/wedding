@@ -7,13 +7,19 @@
         {{configApp.nameOfCR}}
       </span>
       <span class="and">
-        &
+        {{configApp.nameAndOr}}
       </span>
       <span class="name2">
         {{configApp.nameOfCD}}
       </span>
     </h1>
     <h3>{{configApp.targeDate | date: 'dd.MM.yyyy'}}</h3>
+  </div>
+  <audio #audio hidden autoplay loop>
+    <source [src]="configApp.audioUrl" type="audio/mpeg">
+  </audio>
+  <div class="play-audio" [ngClass]="audio.paused ? 'paused' : 'play'" (click)="playAudio()">
+    <i class="ico" [ngClass]="audio.paused ? 'ico-music-note-off' : 'ico-heart-fill'"></i>
   </div>
 
   <div class="image"

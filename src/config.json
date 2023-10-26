@@ -2,15 +2,16 @@
     "titlePage": "Save the Date",
     "nameOfCR": "Toàn",
     "nameOfCD": "Nhung",
-    "nameAndOr": "and",
+    "nameAndOr": "&",
     "targeDate": "2023-11-18T17:00:00",
     "location": "Happy Life Grand Hotel",
-    "dressCode": ["#f79d2f", "#ffffff", "#f7d1c0"],
+    "dressCode": ["#e8cead", "#ffffff", "#dfafaf"],
     "address": "Sảnh Sky Pool, 102 Lê Thị Hồng Gấm, Phường Nguyễn Thái Bình, Quận 1",
     "googleMapUrl": "https://maps.app.goo.gl/gDwL31vbc2pPavRc8",
     "phoneOfLocation": "xxx-xxx-xxx-xxx",
     "timeLineImage": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/time-line-1.png",
     "bannerImage": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (40).jpg",
+    "audioUrl": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/ngay-dau-tien.mp3",
     "columnImage1": [
         {
             "itemImageSrc": "https://dangmixx.s3.ap-southeast-1.amazonaws.com/wedding/Wedding (10).jpg",
