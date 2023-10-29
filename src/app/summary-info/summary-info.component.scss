@@ -1,0 +1,39 @@
+@use '../../mixin.scss' as mixin;
+.container-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px 20px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    gap: 10px;
+    .text{
+     font-family: 'Dancing Script', cursive;
+     font-size: 18px;
+     padding-left: 10px;
+     .name{
+      font-size: 26px;
+      @include mixin.responsive(MD){
+        font-size: 40px;
+      }
+     }
+    }
+    .image {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 5px solid white;
+      border-radius: 20px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    @include mixin.responsive(MD){
+      min-height: 550px;
+    }
+  }
+}

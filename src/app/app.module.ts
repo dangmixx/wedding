@@ -9,8 +9,9 @@ import { SliderComponent } from './slider/slider.component';
 import { LocationComponent } from './location/location.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormSubmitComponent } from './form-submit/form-submit.component';
+import { SummaryInfoComponent } from './summary-info/summary-info.component';
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, SummaryInfoComponent],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
