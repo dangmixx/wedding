@@ -95,20 +95,25 @@
                   formControlName="Note"
                   hidden
                   cols="80"
-                  required></textarea>
+                  ></textarea>
         <br />
         <div class="underline"></div>
         <label for="">Lời nhắn riêng cho cô dâu chú rể:</label>
         <br />
       </div>
     </div>
+
     <div class="sub-title sub-2">
       Buổi tiệc thật sự trọn vẹn nếu có sự góp mặt của Bạn.
       Khoảnh khắc này sẽ được lưu lại mãi cùng hạnh phúc của cô Dâu và chú Rể.
     </div>
+
+    <div class="sub-title message-error" *ngIf="submitting && this.formGroup.invalid">
+      Bạn ơi quên điền tên của bạn rồi kìa 😅!
+    </div>
     <div class="button-form">
       <button type="submit"
-              [disabled]="submitting">
+              [disabled]="submitting && this.formGroup.invalid">
         Submit
       </button>
     </div>

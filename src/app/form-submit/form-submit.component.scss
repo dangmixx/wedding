@@ -32,6 +32,9 @@ $color_2: #fff;
         width: 100%;
       }
     }
+    &.message-error{
+      color: var(--color-primary);
+    }
 
   }
 

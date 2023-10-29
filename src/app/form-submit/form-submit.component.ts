@@ -28,6 +28,7 @@ export class FormSubmitComponent implements OnInit {
 
     public submitForm() {
         this.submitting = true;
+        if(this.formGroup.invalid) return;
         const valueForm = this.formGroup.getRawValue();
         this.#appService
             .postGoogleSheet(valueForm)
