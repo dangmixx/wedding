@@ -52,11 +52,13 @@
     position: relative;
     max-width: 1400px;
     font-size: 12px;
+    line-height: 1.5em;
     z-index: 10;
     padding: 20px;
     margin: 10px;
-    background: rgba(255, 255, 255, 0.80);
+    background: rgba(255, 255, 255, 0.90);
     border-radius: 5px;
+    white-space: pre-line;
     &::before{
       content: '✨';
       color: #741411;
