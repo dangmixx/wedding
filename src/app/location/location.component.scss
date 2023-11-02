@@ -3,7 +3,8 @@
 :host {
   font-family: 'Montserrat', sans-serif;
   white-space: 1px;
-  .moment{
+
+  .moment {
     font-size: 16px;
     color: #741411;
     text-align: center;
@@ -11,6 +12,7 @@
     padding: 0 10px;
     font-style: italic;
   }
+
   .location-container {
     font-weight: bold;
     font-size: 24px;
@@ -18,7 +20,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    a{
+
+    a {
       text-decoration: unset;
       color: inherit;
     }
@@ -32,27 +35,33 @@
       text-align: center;
       align-items: center;
 
-      .location-name{
+      .location-name {
         line-height: 24px;
-        .name{
+
+        .name {
           color: #741411;
           font-size: 24px;
           margin-bottom: 10px;
         }
-        .address{
+
+        .address {
           font-size: 14px;
-          >span{
+
+          >span {
             position: relative;
             width: 30px;
-            >img{
+
+            >img {
               position: absolute;
             }
           }
         }
       }
-      .location-image{
+
+      .location-image {
         position: relative;
-        .hint-location{
+
+        .hint-location {
           position: absolute;
         }
       }
@@ -82,12 +91,14 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
     }
-    .timeline{
-      img{
+
+    .timeline {
+      img {
         display: block;
         margin: auto;
       }
     }
+
     @include mixin.responsive(MD) {
       flex-direction: row;
     }
@@ -119,6 +130,7 @@
 
       .description {
         font-weight: normal;
+
         >p {
           margin: 0;
           font-size: 14px;
@@ -150,4 +162,17 @@
       margin: 20px;
     }
   }
+}
+
+.note {
+  .text-note{
+    font-size: 12px;
+    color: #741411;
+    margin: auto;
+    padding: 5px 20px;
+    width: 100%;
+    max-width: max-content;
+    font-style: italic;
+  }
+
 }
